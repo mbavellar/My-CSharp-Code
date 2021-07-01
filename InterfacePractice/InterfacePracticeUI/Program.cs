@@ -42,11 +42,11 @@ namespace InterfacePracticeUI
             {
                 FirstName = "Letícia",
                 LastName = "Pichotano",
-                CellphoneNumber = "19-99475-4839",
+                CellphoneNumber = "19-99999-9999",
                 PhoneNumber = null,
-                Email = "leticiapichotano@hotmail.com",
-                Address = new CustomerAddressModel("Rua", "Paschoal Pisani", 285, "Jd Santa Clara",
-                        "Mococa", "São Paulo", 13735250)
+                Email = "leticia@hotmail.com",
+                Address = new CustomerAddressModel("Rua", "Cel Diogo", 1481, "Centro",
+                        "Mococa", "São Paulo", 13730260)
             };
         }
     }
