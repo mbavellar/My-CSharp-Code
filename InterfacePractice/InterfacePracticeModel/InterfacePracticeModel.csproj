@@ -39,11 +39,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\ProductBase.cs" />
+    <Compile Include="Abstract\BaseProduct.cs" />
     <Compile Include="CourseProductModel.cs" />
     <Compile Include="CustomerAddressModel.cs" />
     <Compile Include="CustomerModel.cs" />
-    <Compile Include="CustomerModelBase.cs" />
+    <Compile Include="Abstract\BaseCustomerModel.cs" />
     <Compile Include="DigitalProductModel.cs" />
     <Compile Include="Interfaces\ICustomerAddressModel.cs" />
     <Compile Include="Interfaces\IDigitalProductModel.cs" />

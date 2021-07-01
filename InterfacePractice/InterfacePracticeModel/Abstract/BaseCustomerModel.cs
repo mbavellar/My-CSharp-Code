@@ -1,6 +1,6 @@
 ﻿namespace InterfacePracticeModel
 {
-    public class CustomerModelBase
+    public abstract class BaseCustomerModel
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

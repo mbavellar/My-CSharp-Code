@@ -1,23 +1,21 @@
-﻿using InterfacePracticeModel.Interfaces;
+﻿using InterfacePracticeModel.Abstract;
+using InterfacePracticeModel.Interfaces;
 using System;
 
 namespace InterfacePracticeModel
 {
-    public class DigitalProductModel : IDigitalProductModel
+    public class DigitalProductModel : BaseProduct, IDigitalProductModel
     {
-        public string Name { get; set; }
-        public double Price { get; set; }
-        public bool OrderCompleted { get; private set; }
         public byte DownloadsLeft { get; private set; } = 5;
 
-        public DigitalProductModel(string name, double price)
+        public DigitalProductModel(string name, double price) : base (name, price)
         {
             Name = name;
             Price = price;
             OrderCompleted = false;
         }
 
-        public void ShipItems(CustomerModel customer)
+        public override void ShipItems(CustomerModel customer)
         {
             if (!OrderCompleted)
             {

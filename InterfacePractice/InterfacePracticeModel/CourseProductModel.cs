@@ -1,22 +1,19 @@
-﻿using InterfacePracticeModel.Interfaces;
+﻿using InterfacePracticeModel.Abstract;
+using InterfacePracticeModel.Interfaces;
 using System;
 
 namespace InterfacePracticeModel
 {
-    public class CourseProductModel : IProductModel
-    {
-        public string Name { get; set; }
-        public double Price { get; set; }
-        public bool OrderCompleted { get; private set; }
-
-        public CourseProductModel(string name, double price)
+    public class CourseProductModel : BaseProduct
+    {        
+        public CourseProductModel(string name, double price) : base(name, price)
         {
             Name = name;
             Price = price;
             OrderCompleted = false;
         }
 
-        public void ShipItems(CustomerModel customer)
+        public override void ShipItems(CustomerModel customer)
         {
             if (!OrderCompleted)
             {
